@@ -101,9 +101,6 @@ button {
   text-transform: uppercase;
   display: flex;
   margin-right: 76px;
-  position: relative;
-  color: var(--hover-blu);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-accent {
   color: var(--navyblue);
@@ -124,6 +121,9 @@ button {
   justify-content: center;
 }
 .nav-link {
+  color: var(--hover-blu);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
   display: inline-block;
   padding: 24px 0 24px;
   color: var(--navyblue);
@@ -295,7 +295,7 @@ button {
 }
 .team-social-list {
   display: flex;
-
+  justify-content: center;
   gap: 24px;
   padding: 12px;
 }
