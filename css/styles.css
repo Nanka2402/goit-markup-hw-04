@@ -130,8 +130,7 @@ button {
   line-height: 24px;
   letter-spacing: 0.32px;
 }
-.nav-link:hover,
-::after {
+.nav-link::after {
   content: '';
   position: absolute;
   left: 0;
@@ -139,6 +138,7 @@ button {
   height: 4px;
   background-color: var(--hover-blu);
   border-radius: 2px;
+  width: 100%;
 }
 .adress-title {
   background-color: var(--white);
@@ -158,16 +158,7 @@ button {
 .adress-link:focus {
   color: var(--hover-blu);
 }
-.nav-link:hover::after,
-.nav-link:focus::after {
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  width: 48px;
-  background-color: var(--hover-blu);
-  border-radius: 2px;
-  content: '';
-}
+
 /* Hero */
 .hero-section {
   background-color: var(--navyblue, #2e2f42);
@@ -178,11 +169,12 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/hero-bg/people-office1.jpg);
+    url(../images/hero-bg/people-office1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1440px;
+  margin: auto;
 }
 
 .hero-title {
@@ -230,7 +222,7 @@ button {
 
 /* Advantage  */
 .advantage-section {
-  background: var(--cloud);
+  background: var(--white);
   padding: 120px 0;
 }
 .advantage-list {
@@ -290,13 +282,11 @@ button {
   align-items: center;
   display: flex;
   padding: 32px 0;
-  gap: 24px;
 }
 .team-social-list {
   display: flex;
   justify-content: center;
   gap: 24px;
-  padding: 12px;
 }
 .team-social-link {
   width: 40px;
@@ -344,6 +334,7 @@ button {
   font-weight: 400;
   line-height: 1.5em;
   letter-spacing: 0.02em;
+  margin-bottom: 12px;
 }
 /* Portfolio */
 .portfolio-section {
@@ -427,7 +418,7 @@ button {
 }
 .footer-text {
   color: var(--white);
-  font-weight: 500;
+  font-weight: 400px;
   line-height: 1.5em;
   letter-spacing: 0.02em;
   max-width: 264px;
