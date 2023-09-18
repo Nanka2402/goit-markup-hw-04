@@ -125,12 +125,12 @@ button {
   position: relative;
   display: inline-block;
   padding: 24px 0 24px;
-  color: var(--hover-blu);
+  color: var(--navyblue);
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.32px;
 }
-.nav-link::after {
+.nav-link.nav-link.active::after {
   content: '';
   position: absolute;
   left: 0;
@@ -139,6 +139,10 @@ button {
   background-color: var(--hover-blu);
   border-radius: 2px;
   width: 100%;
+}
+
+.nav-link.active {
+  color: var(--hover-blu);
 }
 .adress-title {
   background-color: var(--white);
